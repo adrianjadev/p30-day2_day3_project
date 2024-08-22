@@ -55,7 +55,7 @@ body {
 }
 
 .logo_mark {
-    color: red;
+    color: var(--clr-border-bottom);
 }
 
 .navbar ul li:first-child {
@@ -93,7 +93,7 @@ body {
 
 #wrapper-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
 }
 
@@ -116,7 +116,6 @@ body {
     border: 0;
     height: 0.5em;
     background-color: var(--clr-border-bottom);
-
     margin: 1em 0;
 }
 
@@ -124,6 +123,40 @@ body {
     list-style-type: disc;
     margin-left: 1.5em;
 }
+
+.section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline var(--clr-primary);
+}
+
+/* For Skills section */
+
+#wrapper-skills {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#wrapper-skills .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1.4em;
+    padding: 0;
+}
+
+#wrapper-skills img {
+    height: 100px;
+    width: 100px;
+    
+    /* Other way to center an img or div inside of Grid */
+    place-self: center;
+}
+
+/* For Media queries */
 
 @media(max-width: 768px) {
     .header .container {
